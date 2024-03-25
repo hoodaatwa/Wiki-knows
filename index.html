@@ -287,6 +287,23 @@
       margin: 10px;
 
     }
+#intro-outline {
+    border: 2px solid #007bff; /* Adjust color as needed */
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 20px; /* Creates space between this outline and the next content block */
+}
+
+#intro-outline h2 {
+    color: #333;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+#intro-outline p {
+    font-size: 16px;
+    margin-bottom: 20px;
+}
 
   </style>
 
@@ -315,7 +332,7 @@
         body {
             font-family: 'Roboto', sans-serif;
             padding: 20px;
-            background-color: #FAFAFA;
+            
         }
         .container {
             max-width: 600px;
@@ -332,6 +349,7 @@
             font-size: 16px;
             width: calc(100% - 20px);
             margin-bottom: 20px;
+            text-align:center;
         }
         input[type="text"]:focus {
             border-bottom: 2px solid #1976D2;
@@ -647,7 +665,14 @@ $(document).ready(function() {
   <button id="searchButton" class="btn">Search</button>
 </div>
 <div id="results"></div>
-<div id="pageContent"></div> <!-- Display Wikipedia page content here -->
+<div id="pageContent">
+
+    <div id="intro-outline">
+    <h2>Welcome to Wiki-Know</h2>
+    <p>About
+Dive into a world of knowledge with our easy-to-use Wikipedia search tool—your gateway to discovering endless information.</p>
+    </div>
+</div> <!-- Display Wikipedia page content here -->
 
 </body>
 </html>
